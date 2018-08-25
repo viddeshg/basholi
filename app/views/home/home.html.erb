@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basholi Edulogies</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">    <!--Let browser know website is optimized for mobile-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="./img/icon.ico" rel="shortcut icon">
+  <link rel="icon" href="./img/icon.ico" type="image/ico" sizes="16x16">
+  <meta charset="utf-8"/>
+  <meta name="description" content="Basholi Productions, founded in 2017 is a production and advertising company based in Nagpur. We have made several Music videos, Short Films and Commercials. We're a company open to new people, with open thinking and new ideologies.">
+  <meta name="keywords" content="Basholi,Basholi Productions, Nagpur, Advertising Agency, Production House, Production, Video Production, Web Development, Digital Marketing, Video Production, Short Films, Music Videos, Ads">
+  <meta name="author" content="Viddesh Gharpure">
+  <style>
+    .select-wrapper input.select-dropdown:focus
+    {
+      border-bottom: 1px solid #333;
+    }
+    .dropdown-content li > a, .dropdown-content li > span
+    {
+      color: #333;
+    }
+    input.valid:not([type]), input.valid:not([type]):focus, input.valid[type="text"]:not(.browser-default), input.valid[type="text"]:not(.browser-default):focus, input.valid[type="password"]:not(.browser-default), input.valid[type="password"]:not(.browser-default):focus, input.valid[type="email"]:not(.browser-default), input.valid[type="email"]:not(.browser-default):focus, input.valid[type="url"]:not(.browser-default), input.valid[type="url"]:not(.browser-default):focus, input.valid[type="time"]:not(.browser-default), input.valid[type="time"]:not(.browser-default):focus, input.valid[type="date"]:not(.browser-default), input.valid[type="date"]:not(.browser-default):focus, input.valid[type="datetime"]:not(.browser-default), input.valid[type="datetime"]:not(.browser-default):focus, input.valid[type="datetime-local"]:not(.browser-default), input.valid[type="datetime-local"]:not(.browser-default):focus, input.valid[type="tel"]:not(.browser-default), input.valid[type="tel"]:not(.browser-default):focus, input.valid[type="number"]:not(.browser-default), input.valid[type="number"]:not(.browser-default):focus, input.valid[type="search"]:not(.browser-default), input.valid[type="search"]:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown
+    {
+      border-bottom: 1px solid #333;
+      -webkit-box-shadow: 0 1px 0 0 #333;
+      box-shadow: 0 1px 0 0 #333;
+    }
+    input:not([type]):focus:not([readonly]) + label, input[type="text"]:not(.browser-default):focus:not([readonly]) + label, input[type="password"]:not(.browser-default):focus:not([readonly]) + label, input[type="email"]:not(.browser-default):focus:not([readonly]) + label, input[type="url"]:not(.browser-default):focus:not([readonly]) + label, input[type="time"]:not(.browser-default):focus:not([readonly]) + label, input[type="date"]:not(.browser-default):focus:not([readonly]) + label, input[type="datetime"]:not(.browser-default):focus:not([readonly]) + label, input[type="datetime-local"]:not(.browser-default):focus:not([readonly]) + label, input[type="tel"]:not(.browser-default):focus:not([readonly]) + label, input[type="number"]:not(.browser-default):focus:not([readonly]) + label, input[type="search"]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label
+    {
+      color: #333;
+    }
+    input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default):focus:not([readonly]), input[type="password"]:not(.browser-default):focus:not([readonly]), input[type="email"]:not(.browser-default):focus:not([readonly]), input[type="url"]:not(.browser-default):focus:not([readonly]), input[type="time"]:not(.browser-default):focus:not([readonly]), input[type="date"]:not(.browser-default):focus:not([readonly]), input[type="datetime"]:not(.browser-default):focus:not([readonly]), input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), input[type="tel"]:not(.browser-default):focus:not([readonly]), input[type="number"]:not(.browser-default):focus:not([readonly]), input[type="search"]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly])
+    {
+      border-bottom: #333;
+      box-shadow: #333;
+      -webkit-box-shadow: 0 1px 0 0 #333;
+    }
+
+    .social-media a
+    {
+      color: rgb(166, 175, 175);
+    }
+    .social-media a:hover
+    {
+      color: #fff;
+    }
+    .carousel h2
+    {
+      margin-top: 8rem;
+    }
+    body
+    {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+
+    .carousel
+    {
+      height: 450px;
+    }
+
+    .carousel .indicators
+    {
+      display: none;
+    }
+
+    .navbar-fixed
+    {
+      position: absolute;
+      z-index: 1;
+    }
+
+    .partner-logo
+    {
+      margin-top: 2rem;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 1.5rem;
+      border-left: 5px solid #333;
+    }
+
+    @media (min-width: 768px)
+    {
+      .rc-FeaturedPartners {
+        display: flex;
+        margin: 0 auto;
+        background: transparent;
+      }
+
+      .rc-FeaturedPartners .partner-logo {
+        flex: 1;
+      }
+
+      .main
+      {
+        display: flex;
+        align-items: center;
+      }
+
+      .main2
+      {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+
+      .box1
+      {
+        flex:1;
+        margin: 1rem;
+      }
+
+      .box2
+      {
+        flex:1;
+        margin: 1rem;
+      }
+
+      .box3
+      {
+        flex:1;
+        margin: 1rem;
+      }
+
+      .box4
+      {
+        flex:1;
+        margin: 1rem;
+      }
+    }
+
+    .navbar-fixed-top.scrolled {
+      background-color: rgba(0,0,0,0.6) !important;
+      transition: background-color 200ms linear;
+    }
+
+    .navbar-fixed-top.scrolled .nav-link {
+      color:#555;
+    }
+
+    .navbar-fixed-top
+    {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: transparent;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div class="navbar-fixed">
+  <nav class="navbar-fixed-top">
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <div class="nav-wrapper container">
+      <ul class="left hide-on-med-and-down">
+        <li><a href="" class=""><i class="fas fa-phone"></i> 123-123-1234</a></li>
+        <li><a href="" class=""><i class="fas fa-envelope"></i> contact@basholi.com</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#team">Team</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a class="sidenav-close" href="#team">Team</a></li>
+  <li><a class="sidenav-close" href="#services">Services</a></li>
+  <li><a class="sidenav-close" href="#projects">Projects</a></li>
+  <hr>
+  <li><a href="" class=""><i class="fas fa-phone"></i> 123-123-1234</a></li>
+  <li><a href="" class=""><i class="fas fa-envelope"></i> example@basholi.com</a></li>
+</ul>
+
+
+<div class="carousel carousel-slider center" style="z-index: 0;">
+  <div class="carousel-fixed-item center" style="top: 45% !important;">
+    <a href="/" class="brand-logo" style="color: #fff; font-size: 4rem; "><img src="/img/logo3.png" style="width: 20rem; margin-top: -8rem;"></a>
+  </div>
+  <div class="carousel-item" href="#one!" style="background: url('/img/22.jpg'); background-size: cover; background-position:30%;">
+    <!-- <h2>First Panel</h2>
+    <p class="white-text">This is your first panel</p> -->
+  </div>
+  <div class="carousel-item " href="#two!" style="background: url('/img/11.jpg'); background-size: cover; background-position:15%;">
+    <!-- <h2>Second Panel</h2>
+    <p class="white-text">This is your second panel</p> -->
+  </div>
+  <div class="carousel-item" href="#three!" style="background: url('/img/33.jpg'); background-size: cover; background-position:10%;">
+    <!-- <h2>Third Panel</h2>
+    <p class="white-text">This is your third panel</p> -->
+  </div>
+</div>
+
+<!--<hr class="container">-->
+
+<div id="" class="section white scrollspy">
+  <div class="row container main">
+    <div class="box1" style="padding-left:0; text-align:justify; font-size: 1.2rem; color: #333;">
+      <h4 class="header" style=" letter-spacing: 1px;">ABOUT</h4>
+
+      The aim of Education is the knowledge, not of facts , but Values.
+
+      Basholi Edulogies gives education a new Definition altogether and takes it to an international level. It offers activity oriented education and has sufficient extra curricular Activities . It Also makes education way beyond just learning and books.
+
+      Basholi edulogies was found in April 2018.
+
+      We have a team that takes care of every minute detail related to the bright future of the child and how education can be more interesting in different ways.
+
+    </div>
+    <div class="box2" style="margin-top:1rem;">
+        <div class="card" style="padding:0;">
+          <div class="card-image">
+            <img src="/img/44.jpg">
+            <!--<span class="card-title">Card Title</span>-->
+          </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+<div style="background-color: #ececec;" class="section scrollspy">
+  <div class="row container main2">
+
+    <div class="box4" style="padding-left:0;  text-align:justify; font-size: 1.2rem; color: #333;">
+      <h4 class="header" style="margin-top: 1.5rem; letter-spacing: 1px;">VISION</h4>
+      <p style="text-align:justify; font-size: 1.2rem; margin-bottom: 2.5rem; color: #333;">
+        To attach to the education sector in a way that it transforms the lives of children and individuals towards being self aware, happy, and responsible, thereby creating growing communities and compassionate eco systems.
+      </p>
+
+
+    </div>
+
+    <div class="box3">
+      <div class="card">
+        <div class="card-image ">
+          <img src="/img/55.jpg">
+          <!--<span class="card-title">Card Title</span>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="" class="section white scrollspy">
+  <div class="row container main">
+    <div class="box1" style="padding-left:0; text-align:justify; font-size: 1.2rem; color: #333;">
+      <h4 class="header" style=" letter-spacing: 1px;">Mission</h4>
+
+      <i class="fas fa-angle-right"></i> As School Consultant our mission is to support and strengthen the working and initiating educational bodies with mindful introspection and intervention.
+      <br><br>
+      <i class="fas fa-angle-right"></i> As Resource distributors our mission is to reach from nearest to remotest spaces with the best of educational resources required as per the need and stability of the educational body.
+      <br><br>
+      <i class="fas fa-angle-right"></i> As a Production company our mission is to bring forward best of the stories of educational landscape, communities, individuals and organisations to create enough of awareness, opportunities and motivation.
+
+    </div>
+    <div class="box2" style="margin-top:1rem;">
+      <div class="card" style="padding:0;">
+        <div class="card-image">
+          <img src="/img/11.jpg">
+          <!--<span class="card-title">Card Title</span>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="background-color: #ececec" class="section scrollspy">
+  <div class="row container">
+    <h4 class="header center" style=" letter-spacing: 1px;">Clients</h4>
+    <div class="rc-FeaturedPartners" data-reactid="214">
+        <div class="partner-logo center" data-reactid="216"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/ILLINOIS.jpg?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=30" srcset="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/ILLINOIS.jpg?auto=format%2Ccompress&amp;dpr=2&amp;w=&amp;h=30 2x, https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/ILLINOIS.jpg?auto=format%2Ccompress&amp;dpr=3&amp;w=&amp;h=30 3x" class="partner-logo-img" style="max-height:30px;" alt="University of Illinois" data-reactid="217"></div>
+        <div class="partner-logo center" data-reactid="218"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/Penn-logo.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=30" srcset="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/Penn-logo.png?auto=format%2Ccompress&amp;dpr=2&amp;w=&amp;h=30 2x, https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/Penn-logo.png?auto=format%2Ccompress&amp;dpr=3&amp;w=&amp;h=30 3x" class="partner-logo-img" style="max-height:30px;" alt="University of Pennsylvania" data-reactid="219"></div>
+        <div class="partner-logo center" data-reactid="220"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/jhu_logo.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=30" srcset="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/jhu_logo.png?auto=format%2Ccompress&amp;dpr=2&amp;w=&amp;h=30 2x, https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/jhu_logo.png?auto=format%2Ccompress&amp;dpr=3&amp;w=&amp;h=30 3x" class="partner-logo-img" style="max-height:30px;" alt="John Hopkins University" data-reactid="221"></div>
+        <div class="partner-logo center" data-reactid="222"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/U-M_bmp.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=30" srcset="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/U-M_bmp.png?auto=format%2Ccompress&amp;dpr=2&amp;w=&amp;h=30 2x, https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/U-M_bmp.png?auto=format%2Ccompress&amp;dpr=3&amp;w=&amp;h=30 3x" class="partner-logo-img" style="max-height:30px;" alt="University of Michigan" data-reactid="223"></div>
+        <div class="partner-logo center" data-reactid="224"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/stanford.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=30" srcset="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/stanford.png?auto=format%2Ccompress&amp;dpr=2&amp;w=&amp;h=30 2x, https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/growth_frontpage/partners_logo/stanford.png?auto=format%2Ccompress&amp;dpr=3&amp;w=&amp;h=30 3x" class="partner-logo-img" style="max-height:30px;" alt="University of Stanford" data-reactid="225"></div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="row main">
+      <div class="box1">
+        <div class="col s3 m4 l3">
+          <img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/material_man1.png" class="circle" width="65" height="65">
+        </div>
+        <div class="col s9 m8 l9">
+          <blockquote>
+            <p class="grey-text text-darken-3">
+              <span style="font-weight:500;" class="">When we first</span> started working with this app, it had a pretty steep learning curve. These guys have been working diligently on building their documentation, listening to their customers and adding fixes/additional features; and it has paid off! This app is worth every cent if you are looking to use it commercially like we have.
+
+            </p>
+            <p style="font-weight:300;">Gunther Vinson, TowMate LLC</p>
+            <div class="divider"></div>
+          </blockquote>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="col s3 m4 l3">
+          <img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/material_man1.png" class="circle" width="65" height="65">
+        </div>
+        <div class="col s9 m8 l9">
+          <blockquote>
+            <p class="grey-text text-darken-3">
+              <span style="font-weight:500;" class="">When we first</span> started working with this app, it had a pretty steep learning curve. These guys have been working diligently on building their documentation, listening to their customers and adding fixes/additional features; and it has paid off! This app is worth every cent if you are looking to use it commercially like we have.
+
+            </p>
+            <p style="font-weight:300;">Gunther Vinson, TowMate LLC</p>
+            <div class="divider"></div>
+          </blockquote>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="col s3 m4 l3">
+          <img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/material_man1.png" class="circle" width="65" height="65">
+        </div>
+        <div class="col s9 m8 l9">
+          <blockquote>
+            <p class="grey-text text-darken-3">
+              <span style="font-weight:500;" class="">When we first</span> started working with this app, it had a pretty steep learning curve. These guys have been working diligently on building their documentation, listening to their customers and adding fixes/additional features; and it has paid off! This app is worth every cent if you are looking to use it commercially like we have.
+
+            </p>
+            <p style="font-weight:300;">Gunther Vinson, TowMate LLC</p>
+            <div class="divider"></div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="page-footer" style="background-color:#0b0b0b;">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <img src="./img/logo3.png" style="height: 4rem;">
+        <p class="grey-text text-lighten-4">Basholi Edulogies was founded in 2018 and is based in Nagpur.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul class="social-media">
+          <li><a href="">Team</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Copyright &copy; 2018 Basholi Edulogies
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                var $carousel = $(".carousel");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $carousel.height());
+            });
+        });
+
+        $('.sidenav').sidenav();
+        $('.scrollspy').scrollSpy();
+        $('select').formSelect();
+        $('.carousel').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+        setInterval(function() {
+            $('.carousel').carousel('next');
+        }, 5000);
+    });
+</script>
+</body>
+</html>
